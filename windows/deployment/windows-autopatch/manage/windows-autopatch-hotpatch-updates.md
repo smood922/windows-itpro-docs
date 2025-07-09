@@ -161,7 +161,8 @@ For more information, see [Arm 64 devices must disable compiled hybrid PE usage 
 ### Step 5: Use Event viewer to verify the device has hotpatch updates turned on
 
 1. Right-click on the **Start** menu, and select **Event viewer**.
-1. Search for **AllowRebootlessUpdates** in the filter. If AllowRebootlessUpdates is set to `1`, the device is enrolled in the Autopatch update policy and has hotpatch updates turned on:
+1. Find the **DeviceManagement-Enterprise-Diagnostics-Provider/Admin** logs (expand **Applications and Services Logs** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider**).
+1. Search for **AllowRebootlessUpdates** using the **Find...** tool. If AllowRebootlessUpdates is set to `1`, the device is enrolled in the Autopatch update policy and has hotpatch updates turned on:
 
 ``
 "data": {
